@@ -51,6 +51,7 @@ Tests for update using a `dict` or a sequence of pairs::
     Traceback (most recent call last):
       ...
     TypeError: 'int' object is not iterable
+    TypeError: cannot unpack non-iterable int object
 
 """
 # tag::STRKEYDICT[]
