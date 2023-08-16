@@ -2,8 +2,11 @@
 ``Coordinate``: a simple class with a custom ``__str__``::
 
     >>> moscow = Coordinate(55.756, 37.617)
-    >>> print(moscow)  # doctest:+ELLIPSIS
+    >>> print(moscow)
     <coordinates.Coordinate object at 0x...>
+    >>> location = Coordinate(55.756, 37.617)
+    >>> print(moscow == location)
+    False
 """
 
 # tag::COORDINATE[]
