@@ -3,10 +3,13 @@
 >>> bus1 = Bus(['Alice', 'Bill', 'Claire', 'David'])
 >>> bus2 = copy.copy(bus1)
 >>> bus3 = copy.deepcopy(bus1)
+>>> bus4 = Bus(bus1.passengers)
 >>> bus1.drop('Bill')
 >>> bus2.passengers
 ['Alice', 'Claire', 'David']
 >>> bus3.passengers
+['Alice', 'Bill', 'Claire', 'David']
+>>> bus4.passengers
 ['Alice', 'Bill', 'Claire', 'David']
 
 """
