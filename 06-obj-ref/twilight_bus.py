@@ -1,6 +1,11 @@
 """
 >>> basketball_team = ['Sue', 'Tina', 'Maya', 'Diana', 'Pat']
 >>> bus = TwilightBus(basketball_team)
+>>> bus1 = TwilightBus(copy.deepcopy(basketball_team))
+>>> bus1.drop('Sue')
+>>> bus1.drop('Maya')
+>>> basketball_team
+['Sue', 'Tina', 'Maya', 'Diana', 'Pat']
 >>> bus.drop('Tina')
 >>> bus.drop('Pat')
 >>> basketball_team
@@ -8,6 +13,7 @@
 """
 
 # tag::TWILIGHT_BUS_CLASS[]
+import copy
 class TwilightBus:
     """A bus model that makes passengers vanish"""
 
